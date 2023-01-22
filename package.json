@@ -1,0 +1,22 @@
+{
+  "name": "selenium_webdriver",
+  "version": "1.0.0",
+  "description": "Selenium Web Driver",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lephyns/selenium_webdriver.git"
+  },
+  "author": "Rafael Rabelo da Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lephyns/selenium_webdriver/issues"
+  },
+  "homepage": "https://github.com/lephyns/selenium_webdriver#readme",
+  "dependencies": {
+    "selenium-webdriver": "^4.7.1"
+  }
+}
