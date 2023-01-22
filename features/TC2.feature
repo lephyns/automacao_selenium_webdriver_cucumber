@@ -10,8 +10,8 @@ Feature: UC001 - Cadastrar usuário com exemplos
     Then o sistema exibe uma mensagem de sucesso para cada exemplo
 
     Examples:
-    | nome          | email         | senha         | browser   |
-    | Carlos        | ca@ca.com     | 12345         | chrome    |
-    | Joao          | ja@ca.com     | 1234565       | chrome    |
-    | Carlos        | ca@ca.com     | 12345         | firefox   |
-    | Joao          | ja@ca.com     | 1234565       | firefox   |
+    | nome          | email                 | senha         | browser   |
+    | Ricardo       | ricardo@hotmail.com   | 12345         | chrome    |
+    | Pedro         | pedro@hotmail.com     | 1234565       | chrome    |
+    | Sabrina       | sabrinaca@hotmail.com | 12345         | firefox   |
+    | Robson        | robson@hotmail.com    | 1234565       | firefox   |
