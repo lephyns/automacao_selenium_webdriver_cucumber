@@ -16,7 +16,7 @@ Projeto base de automação de testes com Selenium Web Driver e Cucumber. Neste 
 **Passo 2:** instalar Cucumber e pacotes auxiliares<br>
 `$ npm install --save-dev @cucumber/pretty-formatter @cucumber/cucumber`
 
-    * O @cucumber/pretty-formatter é uma biblioteca para facilitar a identificação/configuração do seu projeto cucumber e interface de testes. E a biblioteca @cucumber/cucumber é a versão completa de suporte a códigos BDD.
+* O @cucumber/pretty-formatter é uma biblioteca para facilitar a identificação/configuração do seu projeto cucumber e interface de testes. E a biblioteca @cucumber/cucumber é a versão completa de suporte a códigos BDD.
 
 **Passo 3:** instalar o selenium-webdriver e assert (biblioteca de auxilio a verificações)<br>
 `$ npm install selenium-webdriver assert`
@@ -24,15 +24,15 @@ Projeto base de automação de testes com Selenium Web Driver e Cucumber. Neste 
 **Passo 4:** instalar os drivers para os navegadores Chrome  e Firefox<br>
 `$ npm install chromedriver geckodriver`
 
-    * chromedriver: driver do Chrome.
-    * geckodriver: driver do firefox.
+  * chromedriver: driver do Chrome.
+  * geckodriver: driver do firefox.
 
 Para verificar a versão basta fazer como no exemplo abaixo:<br>
 `$ npm chromedriver -version`
 
 **Passo 5:** criar estrutura de pastas do projeto<br>
-    * Criar a pasta "features", para criar nossos arquivos BDD.
-    * Criar pasta "step-definitions" dentro da pasta "features". Ela será utilizada para adicionar nossos arquivos de configuração dos testes.
+  * Criar a pasta "features", para criar nossos arquivos BDD.
+  * Criar pasta "step-definitions" dentro da pasta "features". Ela será utilizada para adicionar nossos arquivos de configuração dos testes.
 A estrutura final ficará assim:
 ![img](./img/exibindo_pasta_features_step_definitions.png "Exibindo localização das pastas")
 
