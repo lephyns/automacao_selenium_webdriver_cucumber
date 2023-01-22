@@ -1,14 +1,14 @@
-# O Projeto
+# O Projeto 📚
 
-Projeto base de automação de testes com Selenium Web Driver e Cucumber. Neste projeto também foi adicionado a biblioteca pretty-formater
+Projeto base de automação de testes com Selenium Web Driver e Cucumber. Neste projeto também foi adicionado a biblioteca pretty-formater.
 
-# Dependências
+# Dependências ⚙️
 
 * Selenium Web Driver
 * Cucumber
 * Biblioteca pretty-formater
 
-# Passos para criar o projeto do zero
+# Passos para criar o projeto do zero 📌
 
 * Passo 1: iniciar um projeto NodeJs
 `$ npm init`
