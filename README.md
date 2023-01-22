@@ -48,8 +48,8 @@ Para isso, no item "scripts", para a variável "test" vamos editar o comando par
 
 Com ele vamos executar os testes através do comando "npm test". -->
 
-O arquivo ficará da seguinte forma:
-![img](./img/exibindo_script_test.png "Exibindo script test")
+<!-- O arquivo ficará da seguinte forma:
+![img](./img/exibindo_script_test.png "Exibindo script test") -->
 
 **Passo 6:** criar os arquivos BDD (*.feature)<br>
 Os arquivos em BDD devem estar dentro da pasta "features".
