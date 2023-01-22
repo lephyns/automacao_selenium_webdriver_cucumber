@@ -1,12 +1,12 @@
 # O Projeto 📚
 
-Projeto base de automação de testes com Selenium Web Driver e Cucumber. Neste projeto também foi adicionado a biblioteca pretty-formater que irá nos responder com as estruturas necessárias para integrar os testes dos arquivos com extensão "*.feature" em códigos JavaScript.
+Projeto base de automação de testes com Selenium Web Driver e Cucumber. Neste projeto também foi adicionado a biblioteca pretty-formatter que irá nos responder com as estruturas necessárias para integrar os testes dos arquivos com extensão "*.feature" em códigos JavaScript.
 
 # Dependências ⚙️
 
 * Selenium Web Driver
 * Cucumber
-* Biblioteca pretty-formater
+* Biblioteca pretty-formatter
 
 # Passos para criar o projeto do zero 📌
 
