@@ -37,7 +37,7 @@ Para verificar a versão basta fazer como no exemplo abaixo:<br>
 A estrutura final ficará assim:
 ![img](./img/exibindo_pasta_features_step_definitions.png "Exibindo localização das pastas")
 
-**Passo 6:** adicionar no package.json o comando para execução e criação de relatório HTML<br>
+<!-- **Passo 6:** adicionar no package.json o comando para execução e criação de relatório HTML<br>
 Para isso, no item "scripts", para a variável "test" vamos editar o comando para a seguinte configuração:
 
 ```
@@ -46,17 +46,19 @@ Para isso, no item "scripts", para a variável "test" vamos editar o comando par
   },
 ```
 
-Com ele vamos executar os testes através do comando "npm test".
+Com ele vamos executar os testes através do comando "npm test". -->
 
 O arquivo ficará da seguinte forma:
 ![img](./img/exibindo_script_test.png "Exibindo script test")
 
-**Passo 7:** criar os arquivos BDD (*.feature)<br>
+**Passo 6:** criar os arquivos BDD (*.feature)<br>
 Os arquivos em BDD devem estar dentro da pasta "features".
 
-**Passo 8:** criar os arquivos de teste (Step tests *.JS)<br>
+**Passo 7:** criar os arquivos de teste (Step tests *.JS)<br>
 Os arquivos em javascript devem estar dentro da pasta "step_definitions".
 
-**Passo 9:** executar os testes<br>
-Para executar os testes basta digitar o comando abaixo no terminal:<br>
-`$ npm test`
+**Passo 8:** executar os testes<br>
+Para executar os testes basta digitar o comando abaixo no terminal, após o comando ser finalizado será gerado um arquivo com o nome "cucumber-report.html" que ao ser aberto irá exibir o relatório de testes detalhado.<br>
+`$ node_modules/.bin/cucumber-js -f @cucumber/pretty-formatter features/* --format html:cucumber-report.html`
+
+![gif](./img/executando_projeto.gif "Rodando o projeto")

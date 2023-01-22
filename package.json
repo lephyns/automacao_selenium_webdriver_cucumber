@@ -4,7 +4,7 @@
   "description": "Selenium Web Driver",
   "main": "index.js",
   "scripts": {
-    "test": ""
+    "test": "node_modules/.bin/cucumber-js -f @cucumber/pretty-formatter features/* --format html:cucumber-report.html"
   },
   "repository": {
     "type": "git",

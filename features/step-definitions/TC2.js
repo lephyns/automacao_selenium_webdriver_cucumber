@@ -1,32 +1,17 @@
-const { Given, Then, When, Before, After } = require('@cucumber/cucumber')
+const {Given, Then, When, Before, After} = require('@cucumber/cucumber')
+const assert = require('assert')
 const webdriver = require('selenium-webdriver');
 const { Builder, By, Key, until } = require('selenium-webdriver')
-const assert = require('assert')
 
 //SETUP CHROME DRIVER
-var chrome = require('chromedriver');
-//var options   = new chrome.Options().headless();
-
-// SETUP FIREFOX DRIVER 
-const firefox = require('geckodriver');
-
-let driver
-
-Before(function () {
-
-  // let browser = process.env.BROWSER;
-  // if (browser == 'firefox') { browser = 'firefox'; }
-  // if (browser == 'chrome') { browser = 'chrome'; }
-
-  //   driver =  new Builder()
-  //   .forBrowser(browser)
-  //   //.withCapabilities(webdriver.Capabilities.chrome())
-  //   //.setChromeOptions(options)
-  //   .build();    
-})
-// After( function() {
-//   driver.quit();
-// })
+var chrome = require('selenium-webdriver/chrome');
+const ChromeDriver = require('chromedriver');
+var options   = new chrome.Options().headless();
+let driver = new webdriver.Builder()
+    .forBrowser('chrome')
+    .withCapabilities(webdriver.Capabilities.chrome())
+    .setChromeOptions(options)
+    .build();
 
 
 Given('usuario acessa menu de cadastro novamente, {string}', { timeout: 30 * 1000 }, function (browser) {
@@ -36,8 +21,8 @@ Given('usuario acessa menu de cadastro novamente, {string}', { timeout: 30 * 100
 
   driver = new Builder()
     .forBrowser(browser)
-    //.withCapabilities(webdriver.Capabilities.chrome())
-    //.setChromeOptions(options)
+    .withCapabilities(webdriver.Capabilities.chrome())
+    .setChromeOptions(options)
     .build();
 
   driver.get("https://demo.guru99.com/Agile_Project/Agi_V1/")
