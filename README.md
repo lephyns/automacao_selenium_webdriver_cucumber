@@ -16,7 +16,7 @@ Projeto base de automação de testes com Selenium Web Driver e Cucumber. Neste 
 * **Passo 2:** instalar Cucumber e pacotes auxiliares<br>
 `$ npm install --save-dev @cucumber/pretty-formatter @cucumber/cucumber`
 
-    * O `@cucumber/pretty-formatter` é uma biblioteca para facilitar a identificação/configuração do seu projeto cucumber e interface de testes. E a biblioteca `@cucumber/cucumber` é a versão completa de suporte a códigos BDD.
+    * O @cucumber/pretty-formatter é uma biblioteca para facilitar a identificação/configuração do seu projeto cucumber e interface de testes. E a biblioteca @cucumber/cucumber é a versão completa de suporte a códigos BDD.
 
 * **Passo 3:** instalar o selenium-webdriver e assert (biblioteca de auxilio a verificações)<br>
 `$ npm install selenium-webdriver assert`
