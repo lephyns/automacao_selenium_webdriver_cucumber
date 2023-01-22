@@ -34,7 +34,7 @@ Para verificar a versão basta fazer como no exemplo abaixo:<br>
   * Criar a pasta "features", para criar nossos arquivos BDD.
   * Criar pasta "step-definitions" dentro da pasta "features". Ela será utilizada para adicionar nossos arquivos de configuração dos testes.<br>
 
-A estrutura final ficará assim:
+A estrutura final ficará assim:<br>
 ![img](./img/exibindo_pasta_features_step_definitions.png "Exibindo localização das pastas")
 
 <!-- **Passo 6:** adicionar no package.json o comando para execução e criação de relatório HTML<br>
