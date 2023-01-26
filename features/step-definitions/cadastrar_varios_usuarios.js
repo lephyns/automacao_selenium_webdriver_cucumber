@@ -44,5 +44,4 @@ Then('o sistema exibe uma mensagem de sucesso para cada exemplo', { timeout: 30 
   assert(driver.findElement(By.css(".heading3")).getText() != "Welcome To Customer")
   driver.close();
   driver.quit();
-
 });

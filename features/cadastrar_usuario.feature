@@ -1,10 +1,8 @@
-Feature: UC001 - Cadastrar usuário
-	O usuário preencher os campos: Nome, e-mail, senha e confirmação de senha.
-	O usuário clica no botão 'Cadastrar'.
-    O sistema exibe uma mensagem de sucesso.
+Feature: cadastro de usuário
 
-    Scenario: Fluxo Principal
+    Este caso de uso permite que novos usuários possam se cadastrar no sistema para realizar operações de forma autenticada.
 
-    Given usuario acessa menu de cadastro
-    When preenche campos nome,email,senha e confirmacao
-    Then o sistema exibe uma mensagem de sucesso
+    Scenario: submeter formulário de cadastro com sucesso
+        Given que acesso a página de cadastro do site Publicazo
+        When submeto o formulário de cadastro com dados válidos
+        Then devo ver a mensagem "Bem-vindo! Você se registrou com sucesso."

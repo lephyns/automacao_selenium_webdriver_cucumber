@@ -1,9 +1,9 @@
-Feature: UC001 - Cadastrar usuário com exemplos
+Feature: Cadastrar usuário com exemplos
 	O usuário preencher os campos: Nome, e-mail, senha e confirmação de senha.
 	O usuário clica no botão 'Cadastrar'.
     O sistema exibe uma mensagem de sucesso.
 
-    Scenario Outline: Fluxo Principal com exemplos
+    Scenario Outline: Cadastro vários usuários com exemplos
 
     Given usuario acessa menu de cadastro novamente, "<browser>"
     When preenche campos com exemplos "<nome>","<email>","<senha>" e confirmacao
