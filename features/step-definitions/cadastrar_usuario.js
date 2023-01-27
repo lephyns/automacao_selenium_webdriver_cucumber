@@ -6,7 +6,7 @@ const { Builder, By, Key, until } = require('selenium-webdriver')
 //SETUP CHROME DRIVER
 var chrome = require('selenium-webdriver/chrome');
 const ChromeDriver = require('chromedriver');
-var options = new chrome.Options().headless();
+var options = new chrome.Options().headless()
 let driver = new webdriver.Builder()
     .forBrowser('chrome')
     .withCapabilities(webdriver.Capabilities.chrome())
@@ -35,7 +35,5 @@ Given('submeto o formulário de cadastro com dados válidos', { timeout: 30 * 10
 
 Given('devo ver a mensagem "Bem-vindo! Você se registrou com sucesso."', { timeout: 30 * 1000 }, async () => {
     await driver.findElement(By.css(".toast-message")).click()
-    // await driver.findElement(By.css(".img-circle")).click()
-    // await driver.findElement(By.linkText("Sair")).click()
     await driver.close()
 });

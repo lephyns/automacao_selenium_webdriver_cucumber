@@ -21,11 +21,8 @@ O @cucumber/pretty-formatter é uma biblioteca para facilitar a identificação/
 **Passo 3:** instalar o selenium-webdriver e assert (biblioteca de auxilio a verificações)<br>
 `$ npm install selenium-webdriver assert`
 
-**Passo 4:** instalar os drivers para os navegadores Chrome  e Firefox<br>
-`$ npm install chromedriver geckodriver`
-
-* chromedriver: driver do Chrome.
-* geckodriver: driver do firefox.
+**Passo 4:** instalar os drivers para os navegadores Chrome<br>
+`$ npm install chromedriver`
 
 Para verificar a versão basta fazer como no exemplo abaixo:<br>
 `$ npm chromedriver -version`
@@ -37,7 +34,7 @@ Para verificar a versão basta fazer como no exemplo abaixo:<br>
 A estrutura final ficará assim:<br>
 ![img](./img/exibindo_pasta_features_step_definitions.png "Exibindo localização das pastas")
 
-<!-- **Passo 6:** adicionar no package.json o comando para execução e criação de relatório HTML<br>
+**Passo 6:** adicionar no package.json o comando para execução e criação de relatório HTML<br>
 Para isso, no item "scripts", para a variável "test" vamos editar o comando para a seguinte configuração:
 
 ```
@@ -48,8 +45,8 @@ Para isso, no item "scripts", para a variável "test" vamos editar o comando par
 
 Com ele vamos executar os testes através do comando "npm test". -->
 
-<!-- O arquivo ficará da seguinte forma:
-![img](./img/exibindo_script_test.png "Exibindo script test") -->
+O arquivo ficará da seguinte forma:
+![img](./img/exibindo_script_test.png "Exibindo script test")
 
 **Passo 6:** criar os arquivos BDD (*.feature)<br>
 Os arquivos em BDD devem estar dentro da pasta "features".
@@ -62,3 +59,10 @@ Para executar os testes basta digitar o comando abaixo no terminal, após o coma
 `$ node_modules/.bin/cucumber-js -f @cucumber/pretty-formatter features/* --format html:cucumber-report.html`
 
 ![gif](./img/executando_projeto.gif "Rodando o projeto")
+
+# Observações
+
+Pra rodar a automação em headless coloquei a função `.headless()` no setup do chrome driver, se você preferir visualizar a execução basta remover ela.
+
+![img](./img/funcao_headless.png "Função headless")
+

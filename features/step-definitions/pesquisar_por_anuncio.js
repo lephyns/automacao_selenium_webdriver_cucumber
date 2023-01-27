@@ -6,7 +6,7 @@ const { Builder, By, Key, until } = require('selenium-webdriver')
 //SETUP CHROME DRIVER
 var chrome = require('selenium-webdriver/chrome');
 const ChromeDriver = require('chromedriver');
-var options = new chrome.Options().headless();
+var options = new chrome.Options().headless()
 let driver = new webdriver.Builder()
     .forBrowser('chrome')
     .withCapabilities(webdriver.Capabilities.chrome())
